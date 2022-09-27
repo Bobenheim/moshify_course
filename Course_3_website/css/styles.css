@@ -34,6 +34,7 @@ body {
 h1, h2, h3 {
     color: var(--color-headings);
     margin-bottom: 1rem;
+    line-height: 1.1;
 }
 
 h1 {
@@ -415,11 +416,11 @@ a {
 .block__heading {
     margin-top: 0;
 }
-.block__dark {
+.block--dark {
     background: #000;
     color: #7b858b;   
 }
-.block__dark .block__heading {
+.block--dark .block__heading {
     color: #fff;
 }
 .block--skewed-right {
@@ -474,6 +475,21 @@ a {
 
 .nav__brand {
     transform: translateY(5px);
+}
+
+/* HERO */
+.hero {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+.hero__tagline {
+    font-size: 2rem;
+    color: #b9c3cf;
+    letter-spacing: 2px;
+    margin: 2rem 0 5rem;
+}
+.hero__image {
+    width: 100%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -585,5 +601,14 @@ a {
     }
     .nav__item {
         margin: auto 5vw;
+    }
+
+    /* HERO */
+    .hero {
+        padding-top: 0;
+    }
+    .hero__content {
+        text-align: left;
+        align-self: center;
     }
 }
