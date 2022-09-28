@@ -264,6 +264,11 @@ a {
 .card--secondary .badge--secondary {
     background: #02cdf1;
 }
+
+.card--primary .badge--primary {
+    background-color: #126de4;
+}
+
 /* PLANS */
 .plan__name {
     color: #fff;
@@ -518,6 +523,29 @@ a {
     max-width: 700px;
     margin: 0 auto;
 }
+
+/* PLANS BLOCK */
+.block-plans .grid {
+    gap: 8rem 4rem;
+}
+.block-plans .card {
+    max-width: 400px;
+    margin: 0 auto;
+}
+.plan--popular {
+    transform: scale(1.05);
+}
+
+.plan {
+    transition: transform 0.3s ease-out;
+}
+.plan:hover {
+    transform: scale(1.05);
+}
+.plan--popular:hover {
+    transform: scale(1.1);
+}
+
 
 @media screen and (min-width: 1024px) {
     /* TYPOGRAPHY */
