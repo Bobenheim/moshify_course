@@ -222,6 +222,7 @@ a {
     font-size: 2rem;
     outline: 0;
     padding: 1.5rem;
+    width: 100%;
 }
 ::placeholder {
     color: #cdcbd7;
@@ -546,6 +547,20 @@ a {
     transform: scale(1.1);
 }
 
+/* FEATURES */
+.feature__heading {
+    margin: 1rem 2rem;
+}
+.feature {
+    gap: 4rem 0;
+    margin: 1rem 0;
+}
+.feature__image {
+    width: 100%;
+}
+.feature:first-of-type {
+    margin-top: 6rem;
+}
 
 @media screen and (min-width: 1024px) {
     /* TYPOGRAPHY */
@@ -670,5 +685,10 @@ a {
     /* DOMAIN BLOCK */
     .block-domain__prices {
         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
+
+    /* FEATURES */
+    .feature:nth-of-type(even) .feature__content {
+        order: 2;
     }
 }
