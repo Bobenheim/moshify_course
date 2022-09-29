@@ -162,7 +162,7 @@ a {
     font-weight: 600;
     margin: 1rem 0;
     outline: 0;
-    padding: 2rem 3rem;
+    padding: 2rem 4vw;
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
@@ -227,7 +227,6 @@ a {
     font-size: 2rem;
     outline: 0;
     padding: 1.5rem;
-    width: 100%;
 }
 ::placeholder {
     color: #cdcbd7;
@@ -243,6 +242,7 @@ a {
     border: 0;
     flex-grow: 1;
     padding: 1.5rem 2rem;
+    width: 0;
 }
 
 .input-grp .btn {
@@ -521,8 +521,9 @@ a {
 }
 
 .block-domain__prices {
+    color: var(--color-headings);
     display: grid;
-    grid-template: repeat(2, 6rem) / repeat(3, 1fr);
+    grid-template: repeat(2, 6rem) / repeat(2, 1fr);
     font-size: 2rem;
     font-weight: 600;
     justify-items: center;
@@ -651,6 +652,7 @@ a {
     /* BUTTONS */
     .btn {
         font-size: 1.5rem;
+        padding: 2rem 3rem;
     }
     .input {
         font-size: 1.5rem;
